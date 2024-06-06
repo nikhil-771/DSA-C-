@@ -8,7 +8,6 @@ Then did <b>Recursion</b><br>
   Its almost 5 days learning recursion<br>
   Significantly improved in it.<br>
   Did basic and few medium questions on it<br>
-<br>
-6-06-24<br>
+<h4>6-06-24</h4>
 Started OOPs concept<br>
 
