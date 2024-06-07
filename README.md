@@ -10,4 +10,8 @@ Then did <b>Recursion</b><br>
   Did basic and few medium questions on it<br>
 <h4>6-06-24</h4>
 Started OOPs concept<br>
-
+Classes, methods, constructor<br>, shallow vs deep copy
+<h4>7-06-24</h4>
+Polymorphism, overloading<br>
+Finished sufficient OOPs<br>
+Started <b>Linked list</b>
