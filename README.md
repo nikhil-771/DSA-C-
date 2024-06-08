@@ -10,4 +10,10 @@ Then did <b>Recursion</b><br>
   Did basic and few medium questions on it<br>
 <h4>6-06-24</h4>
 Started OOPs concept<br>
-
+<h>7/06/24</h>
+Polymorphism, overloading<br>
+Finished sufficient OOPs<br>
+Started Linked list<br>
+<h>7/06/24</h>
+reverse linked list<br>
+reverse K nodes<br>
