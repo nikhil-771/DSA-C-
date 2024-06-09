@@ -20,4 +20,4 @@ Started Linked list<br>
 
 <h4>8/06/24</h4>
 Reverse linked list<br>
-Reverse k nodes<br>
+everse k nodes<br>
