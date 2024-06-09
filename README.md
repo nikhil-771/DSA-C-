@@ -19,5 +19,5 @@ Finished sufficient OOPs<br>
 Started Linked list<br>
 
 <h4>8/06/24</h4>
-reverse linked list<br>
-reverse k nodes<br>
+Reverse linked list<br>
+Reverse k nodes<br>
