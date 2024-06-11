@@ -1,4 +1,5 @@
 
-    insert(head,3);
-    insert(head,4);
-    insert(head,5);
+void insert(node* &head, int data);
+void display(node* head);
+void makeCycle(node* head, int pos);
+bool detectCycle(node* head);
