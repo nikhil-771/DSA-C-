@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-//Will give correct output one
+//Will give correct output one time 
 int mean1(int*p, int n)
 {
     static int i=0, sum=0;

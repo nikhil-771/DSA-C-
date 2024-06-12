@@ -11,11 +11,16 @@ int main()
     string st="",output="";
     vector<string>ans;
     int index = 0;
-    cout<<"enter digit";
+    cout<<"enter digit :";
     cin>>st;
 
     solve(ans,st,output,arr,index);
-
+    
+    if(ans.empty())
+    {
+        cout<<"No combination ";
+        return 0;
+    }
     for(auto i:ans)
     {
         cout<<"[";
@@ -39,7 +44,7 @@ void solve(vector<string>&ans,string digit, string output, string arr[],int inde
     int n = digit[index]-'0';
     string value=arr[n];
 
-    for(char c: value)
+    for(auto c: value)
     {
         solve(ans, digit, output+c, arr, index+1);
     }
