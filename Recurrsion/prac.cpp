@@ -1,32 +1,34 @@
-#include <iostream>
-#include <vector>
-
+#include<iostream>
+#include<vector>
 using namespace std;
 
-
-void substrings(string st, int index, string output, vector<string>&ans);
-int main()
+void sub(vector<int> arr, vector<vector<int>> &ans, vector<int> output, int index )
 {
-    string st = "ABC";
-    vector<string> ans;
-    string output="";
-    substrings(st, 0, output, ans);
-    for(auto it:ans)
-        cout<<it<<endl;
-    return 0;
+    if(arr.size()==index)
+    {
+        ans.push_back(output);
+        return;
+    }
+    
+    sub(arr,ans,output, index+1);
+    output.push_back(arr[index]);
+    sub(arr, ans, output, index+1);
+
 }
 
-void substrings(string st, int index, string output, vector<string>&ans)
+int main()
 {
-    if(index==st.size())
+    vector<int>arr={1,2,3};
+    vector<vector<int>> ans;
+    vector<int>output;
+    sub(arr, ans, output,0);
+    for(auto it:ans)
     {
-        if(output.size()>0)
-            ans.push_back(output);
-        return;w
+        cout<<"{";
+        for(auto j:it)
+        {
+            cout<<j;
+        }
+        cout<<"}\n";
     }
-
-    substrings(st, index+1, output,ans);
-    char el = st[index];
-    output.push_back(el);
-    substrings(st, index+1, output,ans);
 }

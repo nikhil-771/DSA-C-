@@ -11,7 +11,6 @@ int main()
 }
 
 void sayDigit(string arr[],int n)
-
 {
     if(n>0)
     {

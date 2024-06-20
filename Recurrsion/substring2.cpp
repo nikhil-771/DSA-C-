@@ -23,5 +23,4 @@ void subSequence(string st, string ans)
     subSequence(rest, ans);
     subSequence(rest, ans+ch);
     
-    
 }
