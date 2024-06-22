@@ -1,34 +1,41 @@
-#include<iostream>
-#include<vector>
+#include <iostream>
+#include <vector>
 using namespace std;
 
-void sub(vector<int> arr, vector<vector<int>> &ans, vector<int> output, int index )
+// void display(vector<int>ans)
+// {
+//     for(auto i:ans)
+//         cout<<i<<" ";
+//     cout<<endl;
+// }
+
+void solve(int *arr, int index, int n, vector<vector<int>>&ans,vector<int>output)
 {
-    if(arr.size()==index)
+    if(index >= n)
     {
         ans.push_back(output);
         return;
     }
-    
-    sub(arr,ans,output, index+1);
-    output.push_back(arr[index]);
-    sub(arr, ans, output, index+1);
 
+    int elem = arr[index];
+    solve(arr,index+1,n,ans, output);
+    output.push_back(elem);
+    solve(arr,index+1,n,ans, output);
+    
 }
 
 int main()
 {
-    vector<int>arr={1,2,3};
-    vector<vector<int>> ans;
+    vector<vector<int>>ans;
     vector<int>output;
-    sub(arr, ans, output,0);
-    for(auto it:ans)
+    int arr[]={1,2,3 };
+    solve(arr,0,3,ans,output);
+
+    for(auto i:ans)
     {
-        cout<<"{";
-        for(auto j:it)
-        {
-            cout<<j;
-        }
-        cout<<"}\n";
+        cout<<"[ ";
+        for(auto j:i)
+            cout<<j<<" ";
+        cout<<"]"<<endl;
     }
 }
