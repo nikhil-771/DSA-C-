@@ -1,1 +1,4 @@
-5
+f(arr[index] > sum)
+    {
+        return;
+    }

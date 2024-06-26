@@ -21,7 +21,7 @@ void findCombinations(vector<int>& candidates, int target, int index, vector<int
             continue;
 
         // If current candidate is greater than target, break
-        if (candidates[i] > target)
+;        if (candidates[i] > target)
             break;
 
         // Choose current candidate
@@ -57,7 +57,7 @@ int main()
     vector<vector<int>> result = combinationSum2(candidates, target);
 
     // Print the result
-    cout << "[\n";
+    cout << "\n";
     for (int i = 0; i < result.size(); ++i) 
     {
         cout << "[";
