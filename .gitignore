@@ -1,0 +1,6 @@
+# exclude .exe files while staging .exe*
+*.exe
+#ignore all log files
+*.log
+
+.vscod/
