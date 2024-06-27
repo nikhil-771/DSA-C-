@@ -78,5 +78,4 @@ void solve(int row, int col, string st, vector<vector<int>>&arr, vector<vector<b
     }
         visited[row][col] = false;
 
-
 }
