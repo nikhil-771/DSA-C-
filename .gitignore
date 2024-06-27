@@ -2,5 +2,6 @@
 *.exe
 #ignore all log files
 *.log
-
+tempCodeRunnerFile.cpp
 .vscod/
+Array/Practice/tempCodeRunnerFile.cpp
